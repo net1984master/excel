@@ -23,6 +23,9 @@
     "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
     "sass": "^1.62.0",
@@ -31,5 +34,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+    "babel-eslint": "^10.1.0"
+  }
 }
