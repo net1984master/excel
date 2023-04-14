@@ -36,6 +36,7 @@
   },
   "browserslist": "> 0.25%, not dead",
   "dependencies": {
-    "babel-eslint": "^10.1.0"
+    "babel-eslint": "^10.1.0",
+    "normalize.css": "^8.0.1"
   }
 }
