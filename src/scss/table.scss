@@ -23,6 +23,8 @@
     border: 1px solid $border-color;
     background: #f8f9fa;
     border-top: none;
+    font-size: 13px;
+    font-weight: 400;
   }
   .row_data {
     display: flex;
@@ -37,6 +39,8 @@
       border-top: none;
       border-left: none;
       height: 100%;
+      font-size: 13px;
+      font-weight: 400;
     }
     & .cell {
       min-width: 40px;
