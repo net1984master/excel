@@ -8,85 +8,38 @@
 </head>
 <body>
     <div id="app">
-        <div class="excel">
-            <div class="excel__header">
-                <input type="text" class="input" value="Новая таблица">
-                <div class="buttons">
-                    <span class="material-icons button">logout</span>
-                    <span class="material-icons button">delete</span>
-                </div>
+        <div class="db">
+            <div class="db_header">
+                <h1>Excel Dashboard</h1>
+            </div>
+        </div>
+
+        <div class="db_new">
+            <div class="db_view">
+                    <a href="#" class="db_create">Новая </br> таблица</a>
+            </div>
+        </div>
+
+        <div class="db_table db_view">
+            <div class="db_list-header">
+                <span>Название</span>
+                <span>Дата открытия</span>
             </div>
 
-            <div class="excel__toolbar">
-                <span class="material-icons button">format_align_left</span>
-                <span class="material-icons button">format_align_center</span>
-                <span class="material-icons button">format_align_right</span>
-                <span class="material-icons button">format_bold</span>
-                <span class="material-icons button">format_italic</span>
-                <span class="material-icons button">format_underlined</span>
-            </div>
-
-            <div class="excel__formula">
-                <div class="label">fx</div>
-                <div class="input" contenteditable spellcheck="false"></div>
-            </div>
-
-            <div class="excel__table">
-                <div class="row">
-                    <div class="row_info"></div>
-                    <div class="row_data">
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="row_info">1</div>
-                    <div class="row_data">
-                        <div class="cell selected" contenteditable></div>
-                        <div class="cell" contenteditable></div>
-                        <div class="cell" contenteditable></div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="row_info">2</div>
-                    <div class="row_data">
-                        <div class="cell" contenteditable></div>
-                        <div class="cell" contenteditable></div>
-                        <div class="cell" contenteditable></div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="row_info">3</div>
-                    <div class="row_data">
-                        <div class="cell" contenteditable></div>
-                        <div class="cell" contenteditable></div>
-                        <div class="cell" contenteditable></div>
-                    </div>
-                </div>
-            </div>
-
+            <ul class="db_list">
+                <li class="db_record">
+                    <a href="#">Таблица номер 1</a>
+                    <strong>21.02.2033</strong>
+                </li>
+                <li class="db_record">
+                    <a href="#">Таблица номер 2</a>
+                    <strong>21.02.2033</strong>
+                </li>
+                <li class="db_record">
+                    <a href="#">Таблица номер 3</a>
+                    <strong>21.02.2033</strong>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
