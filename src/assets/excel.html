@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Excel JS</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+  <div class="excel">
+    <div class="excel__header">
+      <input type="text" class="input" value="Новая таблица">
+      <div class="buttons">
+        <span class="material-icons button">logout</span>
+        <span class="material-icons button">delete</span>
+      </div>
+    </div>
+
+    <div class="excel__toolbar">
+      <span class="material-icons button">format_align_left</span>
+      <span class="material-icons button">format_align_center</span>
+      <span class="material-icons button">format_align_right</span>
+      <span class="material-icons button">format_bold</span>
+      <span class="material-icons button">format_italic</span>
+      <span class="material-icons button">format_underlined</span>
+    </div>
+
+    <div class="excel__formula">
+      <div class="label">fx</div>
+      <div class="input" contenteditable spellcheck="false"></div>
+    </div>
+
+    <div class="excel__table">
+      <div class="row">
+        <div class="row_info"></div>
+        <div class="row_data">
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+          <div class="column">A</div>
+          <div class="column">B</div>
+          <div class="column">C</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row_info">1</div>
+        <div class="row_data">
+          <div class="cell selected" contenteditable></div>
+          <div class="cell" contenteditable></div>
+          <div class="cell" contenteditable></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row_info">2</div>
+        <div class="row_data">
+          <div class="cell" contenteditable></div>
+          <div class="cell" contenteditable></div>
+          <div class="cell" contenteditable></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row_info">3</div>
+        <div class="row_data">
+          <div class="cell" contenteditable></div>
+          <div class="cell" contenteditable></div>
+          <div class="cell" contenteditable></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

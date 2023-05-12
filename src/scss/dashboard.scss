@@ -1,0 +1,88 @@
+@import "mixins";
+@import "variables";
+
+.db {
+  &_header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: $db-header-height;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+    z-index: 1000;
+  }
+
+  &_new {
+    margin-top: $db-header-height;
+    background-color: rgb(241, 243, 244);
+    padding: 1.5rem;
+  }
+
+  &_view {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  &_create {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(241, 243, 244);
+
+    &:hover {
+     color: green;
+      border-color: green;
+    }
+  }
+  &_table {
+    padding: 1rem;
+  }
+  &_list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #202124;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0 12px;
+    border-radius: 25px;
+  }
+  &_list {
+    @include clear-list;
+  }
+  &_record {
+    height: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+
+    &:hover {
+      background: #e6f4ea;
+      border-radius: 25px;
+    }
+
+    & a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
