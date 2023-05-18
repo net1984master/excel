@@ -17,7 +17,13 @@ const loaders = [
     },
 ];
 if (isDev) {
-    loaders.push('eslint-loader');
+    const eslint = {
+      loader: 'eslint-loader',
+      options: {
+          fix: true,
+      },
+    };
+    loaders.push(eslint);
 }
 
 console.log('IS PROD', isProd);
@@ -42,7 +48,8 @@ module.exports = {
         port: 3000,
         hot: isDev,
     },
-    plugins: [
+    plugins:
+        [
         new HtmlWebpackPlugin(
             {
                 template: 'index.html',
