@@ -1,4 +1,5 @@
 export class Excel {
+    static className = 'excel';
     constructor(selector, options) {
         this.$el = document.querySelector(selector);
         this.components = options.components || [];
@@ -6,10 +7,14 @@ export class Excel {
 
     getRoot() {
         const $root = document.createElement('div');
+        $root.classList.add(Excel.className);
         this.components.forEach(
             Component => {
-                const component = new Component();
-                $root.insertAdjacentHTML('beforeend', component.toHTML());
+                const $el = document.createElement('div');
+                $el.classList.add(Component.className);
+                const component = new Component($el);
+                $el.innerHTML = component.toHTML();
+                $root.append($el);
             }
         );
         return $root;
